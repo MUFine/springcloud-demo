@@ -11,7 +11,7 @@ mybatis:
   mapper-locations: classpath*:/mapper/*.xml
 rabbitmq:    					        #本地环境不需要配置mq
     host: localhost
-    port: 15672
+    port: 5672
     username: guest
     password: guest
 test: test
