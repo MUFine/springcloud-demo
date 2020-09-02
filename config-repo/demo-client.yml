@@ -4,7 +4,7 @@ spring:
     url: jdbc:mysql://localhost:3306/test?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
     password: 123456
-  rabbitmq:    					        #本地环境不需要配置mq
+  rabbitmq:
     host: localhost
     port: 5672
     username: guest
