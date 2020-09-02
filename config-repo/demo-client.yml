@@ -14,3 +14,4 @@ rabbitmq:    					        #本地环境不需要配置mq
     port: 5672
     username: guest
     password: guest
+test: test
