@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: client-feign
+server:
+  port: 2024
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:2020/eureka/
+feign:
+  hystrix:
+    enabled: true
+#���ü��
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
