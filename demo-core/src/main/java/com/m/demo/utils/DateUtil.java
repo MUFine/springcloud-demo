@@ -36,8 +36,7 @@ public class DateUtil {
         String str = simpleDateFormat.format(date);
         return str;
     }
-
-
+    
     public static void main(String[] args) {
         System.out.println(dateToStr(new Date(), 2));
     }
