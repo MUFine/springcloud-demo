@@ -1,5 +1,7 @@
 package com.m.demo.controller;
 
+import com.m.demo.annotation.Login;
+import com.m.demo.annotation.Pass;
 import com.m.demo.common.Code;
 import com.m.demo.common.Message;
 import com.m.demo.entity.ResultData;
@@ -32,6 +34,7 @@ public class TestController {
 
     @ApiOperation("测试数据接口")
     @GetMapping("/getData")
+    @Pass
     public ResultData getData(){
         return new ResultData(Code.SUCCESS_CODE, Message.SUCCESS,testService.getData());
     }

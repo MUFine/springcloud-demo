@@ -19,11 +19,12 @@ public class WebMvcConfig implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         System.out.println("启用拦截！");
         registry.addInterceptor(globalInterceptor()).addPathPatterns("/**");
+        registry.addInterceptor(authenticationInterceptor()).addPathPatterns("/**");
     }
-    /*@Bean
+    @Bean
     public AuthenticationInterceptor authenticationInterceptor() {
         return new AuthenticationInterceptor();
-    }*/
+    }
 
     @Bean
     public GlobalInterceptor globalInterceptor() {
