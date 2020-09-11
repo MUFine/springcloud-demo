@@ -6,11 +6,14 @@ import com.m.demo.common.Code;
 import com.m.demo.common.Message;
 import com.m.demo.entity.ResultData;
 import com.m.demo.service.TestService;
+import com.m.demo.utils.IdUtil;
 import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Map;
 
 /**
  * author:M
@@ -39,5 +42,22 @@ public class TestController {
         return new ResultData(Code.SUCCESS_CODE, Message.SUCCESS,testService.getData());
     }
 
+    @ApiOperation("测试id接口")
+    @GetMapping("/getId")
+    public void getId(){
+        System.out.println(IdUtil.getId());
+    }
+
+    @ApiOperation("添加商品接口")
+    @PostMapping("/addProduct")
+    public ResultData addProduct(@RequestBody Map map){
+        return new ResultData(Code.SUCCESS_CODE, Message.SUCCESS,testService.addProduct(map));
+    }
+
+    @ApiOperation("购买接口")
+    @PostMapping("/buy/{productId}")
+    public ResultData addShopRecord(@PathVariable("productId") long productId){
+        return new ResultData(Code.SUCCESS_CODE, Message.SUCCESS,testService.buyProduct(productId));
+    }
 
 }

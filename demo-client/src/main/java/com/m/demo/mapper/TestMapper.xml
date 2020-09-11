@@ -5,4 +5,64 @@
     <select id="getData" resultType="Map">
          select * from user
     </select>
+
+    <!--添加商品-->
+    <insert id="addProduct" parameterType="Map">
+        insert into product
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="productName != null">
+                product_name,
+            </if>
+            <if test="total != null">
+                total,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id},
+            </if>
+            <if test="productName != null">
+                #{productName},
+            </if>
+            <if test="total != null">
+                #{total},
+            </if>
+        </trim>
+    </insert>
+
+    <!--添加购买记录-->
+    <insert id="addShopRecord" parameterType="Map">
+        insert into shop_record
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="productId != null">
+                product_id,
+            </if>
+            <if test="userId != null">
+                user_id,
+            </if>
+            <if test="createTime != null">
+                create_time,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id},
+            </if>
+            <if test="productId != null">
+                #{productId},
+            </if>
+            <if test="userId != null">
+                #{userId},
+            </if>
+            <if test="createTime != null">
+                #{createTime},
+            </if>
+        </trim>
+    </insert>
 </mapper>

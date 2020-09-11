@@ -10,4 +10,6 @@ import java.util.Map;
  */
 public interface TestMapper {
     List<Map> getData();
+    int addProduct(Map map);
+    int addShopRecord(Map map);
 }

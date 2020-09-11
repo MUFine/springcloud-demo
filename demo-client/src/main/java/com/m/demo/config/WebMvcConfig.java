@@ -17,9 +17,9 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class WebMvcConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        System.out.println("启用拦截！");
+        /*System.out.println("启用拦截！");
         registry.addInterceptor(globalInterceptor()).addPathPatterns("/**");
-        registry.addInterceptor(authenticationInterceptor()).addPathPatterns("/**");
+        registry.addInterceptor(authenticationInterceptor()).addPathPatterns("/**");*/
     }
     @Bean
     public AuthenticationInterceptor authenticationInterceptor() {

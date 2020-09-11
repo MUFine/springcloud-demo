@@ -12,4 +12,6 @@ import java.util.Map;
  */
 public interface TestService {
     List<Map> getData();
+    int addProduct(Map map);
+    int buyProduct(long productId);
 }
