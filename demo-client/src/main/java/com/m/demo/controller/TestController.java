@@ -5,6 +5,7 @@ import com.m.demo.annotation.Pass;
 import com.m.demo.common.Code;
 import com.m.demo.common.Message;
 import com.m.demo.entity.ResultData;
+import com.m.demo.service.MQProviderService;
 import com.m.demo.service.TestService;
 import com.m.demo.utils.IdUtil;
 import io.swagger.annotations.*;
@@ -26,6 +27,8 @@ import java.util.Map;
 public class TestController {
     @Autowired
     private TestService testService;
+    @Autowired
+    private MQProviderService mqProviderService;
     @Value("${test}")
     private String data;
 
@@ -55,9 +58,10 @@ public class TestController {
     }
 
     @ApiOperation("购买接口")
-    @PostMapping("/buy/{productId}")
-    public ResultData addShopRecord(@PathVariable("productId") long productId){
-        return new ResultData(Code.SUCCESS_CODE, Message.SUCCESS,testService.buyProduct(productId));
+    @PostMapping("/buy/{userId}/{productId}")
+    public ResultData addShopRecord(@PathVariable("userId") long userId,@PathVariable("productId") long productId){
+        mqProviderService.send(userId,productId);
+        return new ResultData(Code.SUCCESS_CODE, Message.SUCCESS);
     }
 
 }

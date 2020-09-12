@@ -2,26 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20e904e3-e13a-40bc-8697-25d6b0ce4085" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/IdUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/WorkerIdUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/MQConsumerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/MQProviderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/MQConsumerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/MQProviderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/common/Queue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/DemoClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/DemoClientApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/WebMvcConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/dao/TestDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/dao/TestDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/mapper/TestMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/mapper/TestMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/mapper/TestMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/mapper/TestMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/TestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/TestServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/TestServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-client/src/test/java/com/m/demo/DemoClientApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/src/test/java/com/m/demo/DemoClientApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-client/target/classes/com/m/demo/DemoClientApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/target/classes/com/m/demo/DemoClientApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-client/target/classes/com/m/demo/config/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/target/classes/com/m/demo/config/WebMvcConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-client/target/classes/com/m/demo/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/target/classes/com/m/demo/controller/TestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-client/target/classes/com/m/demo/dao/TestDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/target/classes/com/m/demo/dao/TestDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-client/target/classes/com/m/demo/mapper/TestMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/target/classes/com/m/demo/mapper/TestMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-client/target/classes/com/m/demo/mapper/TestMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/target/classes/com/m/demo/mapper/TestMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-client/target/classes/com/m/demo/service/TestService.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/target/classes/com/m/demo/service/TestService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-client/target/classes/com/m/demo/service/serviceImpl/TestServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/target/classes/com/m/demo/service/serviceImpl/TestServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-client/target/test-classes/com/m/demo/DemoClientApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/target/test-classes/com/m/demo/DemoClientApplicationTests.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,38 +39,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/controller/TestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="58" column="63" lean-forward="true" selection-start-line="58" selection-start-column="63" selection-end-line="58" selection-end-column="77" />
+            <state relative-caret-position="85">
+              <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/TestService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo-client/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="114" column="37" selection-start-line="114" selection-start-column="37" selection-end-line="114" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/mapper/TestMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="18" column="27" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -85,8 +51,50 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/TestServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="44" column="45" lean-forward="true" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
+            <state relative-caret-position="-105">
+              <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo-client/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="115" column="21" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/MQProviderServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/MQConsumerServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="21" column="52" lean-forward="true" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/common/Queue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="57" lean-forward="true" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -94,20 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/DemoClientApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/WorkerIdUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="27" selection-start-line="27" selection-end-line="32" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -137,13 +133,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client-ribbon/pom.xml" />
-        <option value="$PROJECT_DIR$/client-ribbon/src/main/java/com/m/demo/controller/TestController.java" />
-        <option value="$PROJECT_DIR$/client-feign/pom.xml" />
-        <option value="$PROJECT_DIR$/client-feign/src/main/java/com/m/demo/service/TestService.java" />
-        <option value="$PROJECT_DIR$/client-feign/src/main/java/com/m/demo/service/serviceImpl/TestServiceImpl.java" />
-        <option value="$PROJECT_DIR$/client-feign/src/main/java/com/m/demo/dao/TestDao.java" />
-        <option value="$PROJECT_DIR$/client-feign/src/main/java/com/m/demo/ClientFeignApplication.java" />
         <option value="$PROJECT_DIR$/client-feign/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/client-feign/src/main/java/com/m/demo/vo/FeignFallBack.java" />
         <option value="$PROJECT_DIR$/client-feign/src/main/java/com/m/demo/controller/TestController.java" />
@@ -183,10 +172,17 @@
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/mapper/TestMapper.xml" />
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/mapper/TestMapper.java" />
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/dao/TestDao.java" />
-        <option value="$PROJECT_DIR$/demo-client/pom.xml" />
-        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/DemoClientApplication.java" />
-        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/controller/TestController.java" />
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/TestService.java" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/MQProviderService.java" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/MQConsumerService.java" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/demo-client/src/test/java/com/m/demo/DemoClientApplicationTests.java" />
+        <option value="$PROJECT_DIR$/demo-client/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/common/Queue.java" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/MQProviderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/MQConsumerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/RabbitMQConfig.java" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/DemoClientApplication.java" />
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/TestServiceImpl.java" />
       </list>
     </option>
@@ -257,6 +253,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springcloud-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -352,12 +358,22 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="springcloud-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -400,51 +416,12 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.DemoClientApplication">
-    <configuration name="DateUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.m.demo.utils.DateUtil" />
-      <module name="demo-core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.m.demo.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="IdUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.m.demo.utils.IdUtil" />
       <module name="demo-core" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.m.demo.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JWTUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.m.demo.jwt.JWTUtil" />
-      <module name="demo-core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.m.demo.jwt.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Secret" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.m.demo.common.Secret" />
-      <module name="demo-core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.m.demo.common.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -461,6 +438,54 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoClientApplicationTests.send" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.m.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.m.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.m.demo.DemoClientApplicationTests" />
+      <option name="METHOD_NAME" value="send" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MQProviderServiceImpl.sendMsg" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.m.demo.service.serviceImpl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.m.demo.service.serviceImpl" />
+      <option name="MAIN_CLASS_NAME" value="com.m.demo.service.serviceImpl.MQProviderServiceImpl" />
+      <option name="METHOD_NAME" value="sendMsg" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestController.send" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.m.demo.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.m.demo.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.m.demo.controller.TestController" />
+      <option name="METHOD_NAME" value="send" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -516,11 +541,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MQProviderServiceImpl.sendMsg" />
+        <item itemvalue="JUnit.DemoClientApplicationTests.send" />
+        <item itemvalue="JUnit.TestController.send" />
         <item itemvalue="Application.IdUtil" />
         <item itemvalue="Application.WorkerIdUtil" />
-        <item itemvalue="Application.JWTUtil" />
-        <item itemvalue="Application.Secret" />
-        <item itemvalue="Application.DateUtil" />
       </list>
     </recent_temporary>
   </component>
@@ -540,7 +565,8 @@
       <workItem from="1599371057301" duration="12755000" />
       <workItem from="1599456585681" duration="13384000" />
       <workItem from="1599638225825" duration="1994000" />
-      <workItem from="1599803211191" duration="13362000" />
+      <workItem from="1599803211191" duration="13742000" />
+      <workItem from="1599890338474" duration="9493000" />
     </task>
     <task id="LOCAL-00001" summary="springcloud的demo">
       <created>1599022973883</created>
@@ -591,17 +617,44 @@
       <option name="project" value="LOCAL" />
       <updated>1599470413906</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="分布式id和锁">
+      <created>1599820066752</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1599820066752</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="MQProviderServiceImpl_sendMsg - 2020.09.12 at 16h 11m 12s.xml">
+      <configuration name="MQProviderServiceImpl.sendMsg" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MQProviderServiceImpl_sendMsg - 2020.09.12 at 16h 13m 13s.xml">
+      <configuration name="MQProviderServiceImpl.sendMsg" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MQProviderServiceImpl_sendMsg - 2020.09.12 at 16h 16m 38s.xml">
+      <configuration name="MQProviderServiceImpl.sendMsg" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestController_send - 2020.09.12 at 16h 19m 10s.xml">
+      <configuration name="TestController.send" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MQProviderServiceImpl_sendMsg - 2020.09.12 at 16h 41m 38s.xml">
+      <configuration name="MQProviderServiceImpl.sendMsg" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MQProviderServiceImpl_sendMsg - 2020.09.12 at 16h 43m 05s.xml">
+      <configuration name="MQProviderServiceImpl.sendMsg" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81658000" />
+    <option name="totallyTimeSpent" value="91531000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27231467" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27609682" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -646,38 +699,10 @@
     <MESSAGE value="springcloud的demo" />
     <MESSAGE value="springcloud的时间工具类" />
     <MESSAGE value="springcloud的core工具类修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="springcloud的core工具类修改" />
+    <MESSAGE value="分布式id和锁" />
+    <option name="LAST_COMMIT_MESSAGE" value="分布式id和锁" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config-repo/demo-client.yml" />
-    <entry file="file://$PROJECT_DIR$/client-ribbon/src/main/java/com/m/demo/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="20" column="88" selection-start-line="20" selection-start-column="88" selection-end-line="20" selection-end-column="88" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client-gateway/mvnw.cmd" />
-    <entry file="file://$PROJECT_DIR$/client-gateway/mvnw" />
-    <entry file="file://$PROJECT_DIR$/springcloud-demo.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/m/demo/DemoClientApplication.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config-server/src/main/resources/Bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client-gateway/src/main/resources/bootstrap.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -877,41 +902,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/dao/TestDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="26" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo-client/src/main/resources/Bootstrap.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" column="48" lean-forward="true" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/WorkerIdUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/mapper/TestMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/DemoClientApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -940,34 +934,130 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo-client/pom.xml">
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/mapper/TestMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="114" column="37" selection-start-line="114" selection-start-column="37" selection-end-line="114" selection-end-column="37" />
+        <state relative-caret-position="342">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/controller/TestController.java">
+    <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/WorkerIdUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="58" column="63" lean-forward="true" selection-start-line="58" selection-start-column="63" selection-end-line="58" selection-end-column="77" />
+        <state relative-caret-position="931">
+          <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/dao/TestDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/TestService.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/MQConsumerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/MQProviderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/controller/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/src/test/java/com/m/demo/DemoClientApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="115" column="21" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/MQProviderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
-          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="33" />
+          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/RabbitMQConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="17" column="94" selection-start-line="17" selection-start-column="94" selection-end-line="17" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/MQConsumerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="21" column="52" lean-forward="true" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/common/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="57" lean-forward="true" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/DemoClientApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="27" selection-start-line="27" selection-end-line="32" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/TestServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="44" column="45" lean-forward="true" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
+        <state relative-caret-position="-105">
+          <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
         </state>
       </provider>
     </entry>
