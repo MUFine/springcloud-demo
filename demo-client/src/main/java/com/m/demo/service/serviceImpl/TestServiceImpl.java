@@ -24,8 +24,8 @@ public class TestServiceImpl implements TestService {
     private TestDao testDao;
     @Autowired
     private WorkerIdUtil workerIdUtil;
-    @Autowired
-    private Redisson redisson;
+    /*@Autowired
+    private Redisson redisson;*/
     @Override
     public List<Map> getData() {
         return testDao.getData();
@@ -40,12 +40,12 @@ public class TestServiceImpl implements TestService {
 
     @Override
     public int buyProduct(long productId) {
-        RLock rLock = redisson.getLock(String.valueOf(productId));
+        /*RLock rLock = redisson.getLock(String.valueOf(productId));
         try {
             rLock.lock(30, TimeUnit.SECONDS);
         }finally {
             rLock.unlock();
-        }
+        }*/
 //        long id = IdUtil.getId();
 //        map.put("id",id);
 //        map.put("createTime",new Date());

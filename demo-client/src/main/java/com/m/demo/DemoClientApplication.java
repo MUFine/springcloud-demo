@@ -8,9 +8,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Bean;
+import org.springframework.web.socket.server.standard.ServerEndpointExporter;
 
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.m.demo")
 @EnableDiscoveryClient
 @MapperScan(basePackages = "com.m.demo.mapper")
 public class DemoClientApplication {
@@ -25,10 +26,11 @@ public class DemoClientApplication {
         return workerIdUtil;
     }
 
-    @Bean
+/*    @Bean
     public Redisson redisson(){
         Config config = new Config();
         config.useSingleServer().setAddress("redis://127.0.0.1:6379").setDatabase(0);
         return (Redisson)Redisson.create(config);
-    }
+    }*/
+
 }
