@@ -8,7 +8,7 @@ import java.io.PrintWriter;
 
 /**
  * author:M
- * describe:
+ * describe:拦截器中的响应
  * date:2020/9/7 16:40
  */
 public class HttpResult {

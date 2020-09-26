@@ -5,7 +5,6 @@ import com.auth0.jwt.exceptions.JWTDecodeException;
 import com.m.demo.annotation.Login;
 import com.m.demo.annotation.Pass;
 import com.m.demo.common.Code;
-import com.m.demo.common.HttpResult;
 import com.m.demo.common.Message;
 import com.m.demo.common.Secret;
 import com.m.demo.entity.ResultData;

@@ -1,8 +1,9 @@
 package com.m.demo.service.serviceImpl;
 
-import com.m.demo.common.Queue;
+import com.m.demo.common.CommonQueue;
 import com.m.demo.service.MQProviderService;
-import org.springframework.amqp.core.AmqpTemplate;
+import org.springframework.amqp.core.MessageDeliveryMode;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -18,15 +19,20 @@ import java.util.Map;
 @Component
 public class MQProviderServiceImpl implements MQProviderService {
     @Autowired
-    private AmqpTemplate amqpTemplate;
+    private RabbitTemplate rabbitTemplate;
 
     @Override
     public void send(long userId,long productId) {
-        Map map = new HashMap();
+        Map<Object,Object> map = new HashMap<>();
         map.put("date",new Date());
         map.put("userId",userId);
         map.put("productId",productId);
-        amqpTemplate.convertAndSend(Queue.BUY_QUEUE_NAME,map);
+        rabbitTemplate.convertAndSend(CommonQueue.CUSTOM_EXCHANGE,CommonQueue.ROUTE_KEY,map,messagePostProcessor -> {
+            messagePostProcessor.getMessageProperties().setDeliveryMode(MessageDeliveryMode.PERSISTENT);
+            //给消息设置延迟毫秒值
+            messagePostProcessor.getMessageProperties().setDelay(10000);
+            return messagePostProcessor;
+        });
     }
 
 }

@@ -17,7 +17,7 @@ public class IdUtil {
         long ltime = 0;
         while (true)
         {
-            if(tmpIDlocked == false)
+            if(!tmpIDlocked)
             {
                 tmpIDlocked = true;
                 //当前：（年、月、日、时、分、秒、毫秒）*10000

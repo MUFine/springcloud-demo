@@ -27,7 +27,7 @@ public class ImageUtil {
     }
 
     //获取上传图片的md5码
-    public static String getMD5(MultipartFile img){
+    private static String getMD5(MultipartFile img){
         String str = null;
         try {
             byte[] imgBytes = img.getBytes();
