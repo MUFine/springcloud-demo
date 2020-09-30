@@ -2,21 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20e904e3-e13a-40bc-8697-25d6b0ce4085" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/RabbitConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/Entity/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/ElasticSearchConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/ElasticSearchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/ElasticSearchServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/common/ESConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/ImageCodeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/PageUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/AuthenticationInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/AuthenticationInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/MQConsumerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/MQConsumerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/RabbitConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/RabbitConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/dao/TestDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/dao/TestDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/mapper/TestMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/mapper/TestMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/MQConsumerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/MQConsumerServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/MQProviderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/MQProviderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/TestServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/TestServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-client/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-client/target/classes/Bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/target/classes/Bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-client/target/classes/com/m/demo/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/target/classes/com/m/demo/controller/TestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-client/target/classes/com/m/demo/service/serviceImpl/TestServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/target/classes/com/m/demo/service/serviceImpl/TestServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/common/HttpResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/common/HttpResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/common/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/common/CommonQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/IdUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/IdUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/ImageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/ImageUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/MD5Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/MD5Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-core/target/classes/com/m/demo/jwt/UserUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/common/CommonQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/common/RabbitConstant.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,22 +46,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/MQProviderServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/controller/TestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="32" column="72" lean-forward="true" selection-start-line="32" selection-start-column="72" selection-end-line="32" selection-end-column="72" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="237">
+              <caret line="132" column="50" lean-forward="true" selection-start-line="132" selection-start-column="50" selection-end-line="132" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/common/ESConstant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="55" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/MQConsumerServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/ElasticSearchServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="29" column="40" lean-forward="true" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+            <state relative-caret-position="110">
+              <caret line="62" column="28" lean-forward="true" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,10 +76,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/MQConsumerService.java">
+        <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/Entity/Product.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+            <state relative-caret-position="123">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,28 +88,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/controller/TestController.java">
+        <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/ElasticSearchConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="69" column="66" selection-start-line="69" selection-start-column="66" selection-end-line="69" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/RabbitConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="50" column="115" selection-start-line="50" selection-start-column="115" selection-end-line="50" selection-end-column="115" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/common/CommonQueue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="46" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="46" />
+            <state relative-caret-position="722">
+              <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,9 +104,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="AnnotationType" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -127,23 +125,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/DateUtil.java" />
-        <option value="$PROJECT_DIR$/client-feign/src/main/java/com/m/demo/config/WebMvcConfig.java" />
-        <option value="$PROJECT_DIR$/client-gateway/src/main/java/com/m/demo/config/WebMvcConfig.java" />
-        <option value="$PROJECT_DIR$/client-gateway/src/main/java/com/m/demo/config/AuthenticationInterceptor.java" />
-        <option value="$PROJECT_DIR$/client-gateway/src/main/java/com/m/demo/jwt/UserUtil.java" />
-        <option value="$PROJECT_DIR$/client-gateway/pom.xml" />
-        <option value="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/AESUtil.java" />
-        <option value="$PROJECT_DIR$/client-gateway/src/main/java/com/m/demo/filter/GatewayFilter.java" />
-        <option value="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/common/Secret.java" />
-        <option value="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/jwt/JWTUtil.java" />
         <option value="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/common/Code.java" />
         <option value="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/common/Message.java" />
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/GlobalInterceptor.java" />
         <option value="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/WorkerIdUtil.java" />
-        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/mapper/TestMapper.xml" />
-        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/mapper/TestMapper.java" />
-        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/dao/TestDao.java" />
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/TestService.java" />
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/MQProviderService.java" />
         <option value="$PROJECT_DIR$/demo-client/src/test/java/com/m/demo/DemoClientApplicationTests.java" />
@@ -151,33 +136,46 @@
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/RabbitMQConfig.java" />
         <option value="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/annotation/UserId.java" />
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/ParameterHandlerConfig.java" />
-        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/TestServiceImpl.java" />
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/WebsocketConfig.java" />
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/WebsoketService.java" />
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/WebsoketServiceImpl.java" />
-        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/DemoClientApplication.java" />
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/websocket/Websocket.java" />
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/WebMvcConfig.java" />
         <option value="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/annotation/LoginName.java" />
         <option value="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/annotation/LoginDate.java" />
         <option value="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/annotation/UserType.java" />
         <option value="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/jwt/UserUtil.java" />
-        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/controller/TestController.java" />
         <option value="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/ParameterUtil.java" />
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/ParameterHandler.java" />
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/AuthenticationInterceptor.java" />
         <option value="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/common/HttpResult.java" />
-        <option value="$PROJECT_DIR$/demo-client/pom.xml" />
-        <option value="$PROJECT_DIR$/demo-core/pom.xml" />
         <option value="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/MD5Util.java" />
         <option value="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/IdUtil.java" />
         <option value="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/ImageUtil.java" />
-        <option value="$PROJECT_DIR$/demo-client/src/main/resources/Bootstrap.yml" />
         <option value="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/common/CommonQueue.java" />
-        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/RabbitConfig.java" />
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/MQProviderServiceImpl.java" />
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/MQConsumerService.java" />
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/MQConsumerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/demo-core/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-client/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/PageUtil.java" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/dao/ElasticRepository.java" />
+        <option value="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/common/ESConstant.java" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/dao/ElasticSearchDao.java" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/dao/TestMapper.java" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/mapper/TestMapper.java" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/RabbitConfig.java" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/dao/TestDao.java" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/DemoClientApplication.java" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/mapper/TestMapper.xml" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/TestServiceImpl.java" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/resources/Bootstrap.yml" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/ElasticSearchConfig.java" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/ElasticSearchService.java" />
+        <option value="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/ImageCodeUtil.java" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/Entity/Product.java" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/ElasticSearchServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -190,7 +188,30 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="demo-client" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="demo-client" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="demo-client" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="org.springframework.boot:spring-boot-starter-data-elasticsearch:2.2.5.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="demo-client" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="org.springframework.boot:spring-boot-starter-data-elasticsearch:2.2.5.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+          <item name="org.springframework.data:spring-data-elasticsearch:3.2.5.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
@@ -206,6 +227,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -267,6 +289,36 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springcloud-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -342,12 +394,21 @@
               <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="springcloud-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -358,24 +419,26 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/GitRepository/StarCloud" />
+    <property name="last_opened_file_path" value="D:/GitRepository/assistant_sanqi" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.m.demo.utils" />
+      <recent name="com.m.demo.mapper" />
       <recent name="com.m.demo.config" />
       <recent name="com.m.demo" />
       <recent name="com.m.demo.filter" />
-      <recent name="com.m.demo.jwt" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\springcloudDemo\springcloud-demo\demo-client\src\main\java\com\m\demo\mapper" />
+      <recent name="F:\springcloudDemo\springcloud-demo\demo-client\src\main\java\com\m\demo\dao" />
       <recent name="F:\springcloudDemo\springcloud-demo\demo-core\src\main\java\com\m\demo\utils" />
       <recent name="F:\springcloudDemo\springcloud-demo\client-gateway\src\main\java\com\m\demo" />
       <recent name="F:\springcloudDemo\springcloud-demo\demo-core\src\main\java\com\m\demo\annotation" />
-      <recent name="F:\springcloudDemo\springcloud-demo\demo-client\src\main\java\com\m\demo\mapper" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -390,7 +453,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoClientApplication">
+  <component name="RunManager" selected="Spring Boot.DemoServerApplication">
     <configuration name="HttpResult" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.m.demo.common.HttpResult" />
       <module name="demo-core" />
@@ -547,7 +610,12 @@
       <workItem from="1600576304193" duration="15345000" />
       <workItem from="1600668555884" duration="4078000" />
       <workItem from="1601015354921" duration="17111000" />
-      <workItem from="1601100450699" duration="1661000" />
+      <workItem from="1601100450699" duration="3123000" />
+      <workItem from="1601200690048" duration="5921000" />
+      <workItem from="1601274882839" duration="17716000" />
+      <workItem from="1601295630982" duration="2581000" />
+      <workItem from="1601361953866" duration="16444000" />
+      <workItem from="1601450284947" duration="12618000" />
     </task>
     <task id="LOCAL-00001" summary="springcloud的demo">
       <created>1599022973883</created>
@@ -619,7 +687,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600594128263</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="rabbitmq延迟队列">
+      <created>1601102191387</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1601102191387</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -643,13 +718,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135460000" />
+    <option name="totallyTimeSpent" value="192202000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30332828" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3267776" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -659,7 +734,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32786885" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.36885247" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.36885247" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -697,321 +772,10 @@
     <MESSAGE value="分布式id和锁" />
     <MESSAGE value="rabbitmq的使用" />
     <MESSAGE value="自定义注解赋值" />
-    <option name="LAST_COMMIT_MESSAGE" value="自定义注解赋值" />
+    <MESSAGE value="rabbitmq延迟队列" />
+    <option name="LAST_COMMIT_MESSAGE" value="rabbitmq延迟队列" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/MQProviderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-client/src/test/java/com/m/demo/DemoClientApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/RabbitMQConfig.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.31/tomcat-embed-websocket-9.0.31.jar!/javax/websocket/RemoteEndpoint.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="53" column="45" lean-forward="true" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.4.RELEASE/spring-web-5.2.4.RELEASE.jar!/org/springframework/web/bind/annotation/RequestBody.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/common/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/common/Code.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.2.4.RELEASE/spring-core-5.2.4.RELEASE.jar!/org/springframework/core/MethodParameter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2131">
-          <caret line="420" column="42" selection-start-line="420" selection-start-column="42" selection-end-line="420" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/ParameterHandlerConfig.java" />
-    <entry file="file://$PROJECT_DIR$/demo-core/src/test/java/com/m/demo/DemoCoreApplicationTests.java" />
-    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/TestService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/DemoClientApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/WebsocketConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-          <folding>
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/WebsoketService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/websocket/Websocket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="40" column="58" lean-forward="true" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#898#899#0" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/WebMvcConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/java_jdk/jdk1.8/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="509" column="26" selection-start-line="509" selection-start-column="26" selection-end-line="509" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/annotation/UserId.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="10" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/annotation/LoginName.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="9" selection-start-line="9" selection-end-line="10" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/annotation/UserType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/annotation/LoginDate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="9" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/jwt/UserUtil.java" />
-    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/AuthenticationInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="57" column="24" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/ParameterHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/common/HttpResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-53">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/MD5Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/IdUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="23" column="95" selection-start-line="23" selection-start-column="95" selection-end-line="23" selection-end-column="95" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/DateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-347">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/ImageUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/WorkerIdUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-480">
-          <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/ParameterUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/jwt/JWTUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-core/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-client/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/WebsoketServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/TestServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-client/src/main/resources/Bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.2.5.RELEASE/spring-amqp-2.2.5.RELEASE.jar!/org/springframework/amqp/core/Queue.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-          <folding>
-            <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.2.5.RELEASE/spring-amqp-2.2.5.RELEASE.jar!/org/springframework/amqp/core/FanoutExchange.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding>
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#290#291#0" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.2.5.RELEASE/spring-amqp-2.2.5.RELEASE.jar!/org/springframework/amqp/core/BindingBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-551">
-          <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.2.5.RELEASE/spring-amqp-2.2.5.RELEASE.jar!/org/springframework/amqp/core/MessagePostProcessor.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1048,40 +812,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/controller/TestController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.7.3/amqp-client-5.7.3.jar!/com/rabbitmq/client/Channel.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="69" column="66" selection-start-line="69" selection-start-column="66" selection-end-line="69" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/common/CommonQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="46" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="46" />
+        <state relative-caret-position="118">
+          <caret line="135" column="9" selection-start-line="135" selection-start-column="9" selection-end-line="135" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/MQProviderServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="32" column="72" lean-forward="true" selection-start-line="32" selection-start-column="72" selection-end-line="32" selection-end-column="72" />
+        <state relative-caret-position="209">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/RabbitConfig.java">
+    <entry file="file://$PROJECT_DIR$/demo-client/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="50" column="115" selection-start-line="50" selection-start-column="115" selection-end-line="50" selection-end-column="115" />
+        <state relative-caret-position="266">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-core/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/MQConsumerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/MQConsumerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
+        <state relative-caret-position="190">
           <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1089,10 +863,315 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/MQConsumerServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/common/RabbitConstant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="29" column="40" lean-forward="true" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+        <state relative-caret-position="171">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/7.9.2/elasticsearch-7.9.2.jar!/org/elasticsearch/action/index/IndexRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="343" column="43" selection-start-line="343" selection-start-column="31" selection-end-line="343" selection-end-column="43" />
+          <folding>
+            <element signature="e#12070#12071#0" expanded="true" />
+            <element signature="e#12141#12142#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/7.9.2/elasticsearch-7.9.2.jar!/org/elasticsearch/action/support/replication/ReplicationRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="70" column="25" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/client/elasticsearch-rest-high-level-client/7.9.2/elasticsearch-rest-high-level-client-7.9.2.jar!/org/elasticsearch/client/indices/AnalyzeRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="159" column="53" lean-forward="true" selection-start-line="159" selection-start-column="53" selection-end-line="159" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/IdUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="23" column="95" selection-start-line="23" selection-start-column="95" selection-end-line="23" selection-end-column="95" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/client/elasticsearch-rest-high-level-client/7.9.2/elasticsearch-rest-high-level-client-7.9.2.jar!/org/elasticsearch/client/IndicesClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="140" column="60" selection-start-line="140" selection-start-column="43" selection-end-line="140" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-elasticsearch/3.2.5.RELEASE/spring-data-elasticsearch-3.2.5.RELEASE.jar!/org/springframework/data/elasticsearch/repository/ElasticsearchRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.2.5.RELEASE/spring-data-commons-2.2.5.RELEASE.jar!/org/springframework/data/domain/PageRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="51" />
+          <folding>
+            <element signature="e#671#672#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.2.5.RELEASE/spring-data-commons-2.2.5.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-elasticsearch/3.2.5.RELEASE/spring-data-elasticsearch-3.2.5.RELEASE.jar!/org/springframework/data/elasticsearch/core/query/Query.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-elasticsearch/3.2.5.RELEASE/spring-data-elasticsearch-3.2.5.RELEASE.jar!/org/springframework/data/elasticsearch/core/FacetedPageImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+          <folding>
+            <element signature="e#1882#1883#0" expanded="true" />
+            <element signature="e#1912#1913#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-elasticsearch/3.2.5.RELEASE/spring-data-elasticsearch-3.2.5.RELEASE.jar!/org/springframework/data/elasticsearch/core/aggregation/impl/AggregatedPageImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+          <folding>
+            <element signature="e#751#752#0" expanded="true" />
+            <element signature="e#781#782#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-elasticsearch/3.2.5.RELEASE/spring-data-elasticsearch-3.2.5.RELEASE.jar!/org/springframework/data/elasticsearch/core/ElasticsearchTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="267" column="71" lean-forward="true" selection-start-line="267" selection-start-column="71" selection-end-line="267" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/PageUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/dao/ElasticSearchDao.java" />
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/TestService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/RabbitConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="74" column="1" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/DemoClientApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/dao/TestDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/mapper/TestMapper.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/mapper/TestMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/resources/Bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="43" column="33" lean-forward="true" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/client/elasticsearch-rest-client/7.9.2/elasticsearch-rest-client-7.9.2.jar!/org/elasticsearch/client/RestClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="112" column="36" selection-start-line="112" selection-start-column="36" selection-end-line="112" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/client/elasticsearch-rest-high-level-client/7.9.2/elasticsearch-rest-high-level-client-7.9.2.jar!/org/elasticsearch/client/RestHighLevelClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="172" column="11" selection-start-line="172" selection-start-column="11" selection-end-line="172" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/TestServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/7.9.2/elasticsearch-7.9.2.jar!/org/elasticsearch/search/SearchHits.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="133" column="11" lean-forward="true" selection-start-line="133" selection-start-column="11" selection-end-line="133" selection-end-column="20" />
+          <folding>
+            <element signature="e#4561#4562#0" expanded="true" />
+            <element signature="e#4593#4594#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/7.9.2/elasticsearch-7.9.2.jar!/org/elasticsearch/index/query/BaseTermQueryBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="16" column="96" selection-start-line="16" selection-start-column="96" selection-end-line="16" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/7.9.2/elasticsearch-7.9.2.jar!/org/elasticsearch/index/query/AbstractQueryBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="38" column="103" selection-start-line="38" selection-start-column="91" selection-end-line="38" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/java_jdk/jdk1.8/src.zip!/java/lang/StringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="75" column="19" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/java_jdk/jdk1.8/src.zip!/java/lang/StringBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-965">
+          <caret line="96" column="20" selection-start-line="96" selection-start-column="20" selection-end-line="96" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/ElasticSearchConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/ImageCodeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="118" column="86" lean-forward="true" selection-start-line="118" selection-start-column="86" selection-end-line="118" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/common/ESConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="55" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/ElasticSearchService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/7.9.2/elasticsearch-7.9.2.jar!/org/elasticsearch/index/query/QueryBuilders.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-53">
+          <caret line="77" column="35" selection-start-line="77" selection-start-column="35" selection-end-line="77" selection-end-column="35" />
+          <folding>
+            <element signature="e#2848#2849#0" expanded="true" />
+            <element signature="e#2904#2905#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/7.9.2/elasticsearch-7.9.2.jar!/org/elasticsearch/index/query/TermQueryBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1425">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/7.9.2/elasticsearch-7.9.2.jar!/org/elasticsearch/search/builder/SearchSourceBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="390" column="58" selection-start-line="390" selection-start-column="49" selection-end-line="390" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/controller/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="132" column="50" lean-forward="true" selection-start-line="132" selection-start-column="50" selection-end-line="132" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/Entity/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/ElasticSearchServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="62" column="28" lean-forward="true" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

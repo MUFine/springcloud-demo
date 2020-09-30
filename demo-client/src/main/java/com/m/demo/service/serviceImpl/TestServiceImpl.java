@@ -2,16 +2,12 @@ package com.m.demo.service.serviceImpl;
 
 import com.m.demo.dao.TestDao;
 import com.m.demo.service.TestService;
-import com.m.demo.utils.IdUtil;
 import com.m.demo.utils.WorkerIdUtil;
-import org.redisson.Redisson;
-import org.redisson.api.RLock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import java.util.Date;
+
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.TimeUnit;
 
 /**
  * author:M

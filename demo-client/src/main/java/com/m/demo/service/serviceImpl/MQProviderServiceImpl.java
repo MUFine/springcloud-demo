@@ -1,6 +1,6 @@
 package com.m.demo.service.serviceImpl;
 
-import com.m.demo.common.CommonQueue;
+import com.m.demo.common.RabbitConstant;
 import com.m.demo.service.MQProviderService;
 import org.springframework.amqp.core.MessageDeliveryMode;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -27,7 +27,7 @@ public class MQProviderServiceImpl implements MQProviderService {
         map.put("date",new Date());
         map.put("userId",userId);
         map.put("productId",productId);
-        rabbitTemplate.convertAndSend(CommonQueue.CUSTOM_EXCHANGE,CommonQueue.ROUTE_KEY,map,messagePostProcessor -> {
+        rabbitTemplate.convertAndSend(RabbitConstant.CUSTOM_EXCHANGE, RabbitConstant.ROUTE_KEY,map, messagePostProcessor -> {
             messagePostProcessor.getMessageProperties().setDeliveryMode(MessageDeliveryMode.PERSISTENT);
             //给消息设置延迟毫秒值
             messagePostProcessor.getMessageProperties().setDelay(10000);

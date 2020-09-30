@@ -6,8 +6,9 @@ import java.util.Map;
 /**
  * author:M
  * describe:
- * date:2020/9/1 18:02
+ * date:2020/9/28 20:25
  */
+
 public interface TestMapper {
     List<Map> getData();
     int addProduct(Map map);

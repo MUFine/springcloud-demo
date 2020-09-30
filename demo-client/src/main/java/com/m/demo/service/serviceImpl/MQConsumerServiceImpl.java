@@ -1,6 +1,6 @@
 package com.m.demo.service.serviceImpl;
 
-import com.m.demo.common.CommonQueue;
+import com.m.demo.common.RabbitConstant;
 import com.m.demo.service.MQConsumerService;
 import com.rabbitmq.client.Channel;
 import org.springframework.amqp.core.*;
@@ -16,7 +16,7 @@ import java.util.Map;
  * date:2020/9/12 14:56
  */
 @Component
-@RabbitListener(queues = CommonQueue.BUY_QUEUE_NAME)
+@RabbitListener(queues = RabbitConstant.BUY_QUEUE_NAME)
 public class MQConsumerServiceImpl implements MQConsumerService {
     @Override
     @RabbitHandler
