@@ -13,6 +13,7 @@ import com.m.demo.service.WebsoketService;
 import com.m.demo.utils.DateUtil;
 import com.m.demo.utils.IdUtil;
 import com.m.demo.utils.ImageCodeUtil;
+import com.m.demo.utils.WorkerIdUtil;
 import io.swagger.annotations.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,6 +46,8 @@ public class TestController {
     private WebsoketService WebsoketService;
     @Autowired
     private ElasticSearchService elasticSearchService;
+    @Autowired
+    private WorkerIdUtil workerIdUtil;
     @Value("${test}")
     private String data;
 
@@ -52,6 +55,12 @@ public class TestController {
     @GetMapping("/test")
     public String test(){
         return this.data;
+    }
+
+    @ApiOperation("测试workerId接口")
+    @GetMapping("/workerId")
+    public long workerId(){
+        return workerIdUtil.nextId();
     }
 
     @ApiOperation("测试数据接口")

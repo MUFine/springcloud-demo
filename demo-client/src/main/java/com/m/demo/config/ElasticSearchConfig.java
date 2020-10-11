@@ -23,7 +23,7 @@ public class ElasticSearchConfig {
     private String host;
     private int port;
     private String scheme;
-    private int connTimeout;
+    private int connectionTimeout;
     private int socketTimeout;
     private int connectionRequestTimeout;
     @Bean
@@ -35,7 +35,7 @@ public class ElasticSearchConfig {
     public RestClient restClient() {
         return RestClient.builder(new HttpHost(host, port, scheme))
                 .setRequestConfigCallback(restClientBuilder -> restClientBuilder
-                        .setConnectTimeout(connTimeout)
+                        .setConnectTimeout(connectionTimeout)
                         .setSocketTimeout(socketTimeout)
                         .setConnectionRequestTimeout(connectionRequestTimeout))
                 .build();

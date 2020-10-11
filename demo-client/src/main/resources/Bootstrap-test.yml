@@ -1,0 +1,47 @@
+spring:
+  application:
+    name: demo-client
+  cloud:
+    config:
+      profiles: client-dev
+      discovery:
+        enabled: true
+        service-id: config-server
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: localhost:9300
+server:
+  port: 2022
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:2020/eureka/
+logging:
+  pattern:
+    console: "%date{yyyy-MM-dd HH:mm:ss} | %highlight(%-5level) | %boldYellow(%thread) | %boldGreen(%logger) | %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    org.springframework: INFO
+    guru.springframework.controllers: INFO
+    org.hibernate: INFO
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+security:                       #是否开启基本的鉴权，默认为true
+  basic:
+    enabled: false
+es:
+  config:
+    open: true
+    host: localhost
+    port: 9200
+    scheme: http
+    connectionTimeout: 3000
+    socketTimeout: 5000
+    connectionRequestTimeout: 500
+id:
+  workerId: 1
+  datacenterId: 10
