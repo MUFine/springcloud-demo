@@ -5,6 +5,8 @@ import com.m.demo.annotation.*;
 import com.m.demo.common.Code;
 import com.m.demo.common.Message;
 import com.m.demo.entity.ResultData;
+import com.m.demo.entity.Secret;
+import com.m.demo.entity.WorkerId;
 import com.m.demo.jwt.JWTUtil;
 import com.m.demo.service.ElasticSearchService;
 import com.m.demo.service.MQProviderService;
@@ -13,7 +15,6 @@ import com.m.demo.service.WebsoketService;
 import com.m.demo.utils.DateUtil;
 import com.m.demo.utils.IdUtil;
 import com.m.demo.utils.ImageCodeUtil;
-import com.m.demo.utils.WorkerIdUtil;
 import io.swagger.annotations.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,7 +48,9 @@ public class TestController {
     @Autowired
     private ElasticSearchService elasticSearchService;
     @Autowired
-    private WorkerIdUtil workerIdUtil;
+    private WorkerId workerId;
+    @Autowired
+    private Secret secret;
     @Value("${test}")
     private String data;
 
@@ -60,7 +63,7 @@ public class TestController {
     @ApiOperation("测试workerId接口")
     @GetMapping("/workerId")
     public long workerId(){
-        return workerIdUtil.nextId();
+        return workerId.nextId();
     }
 
     @ApiOperation("测试数据接口")
@@ -103,7 +106,7 @@ public class TestController {
         map.put("userId","1");
         map.put("loginName","loginName");
         map.put("userType","userType");
-        return new ResultData(Code.SUCCESS_CODE, Message.SUCCESS, JWTUtil.getToken(map));
+        return new ResultData(Code.SUCCESS_CODE, Message.SUCCESS, JWTUtil.getToken(map,secret.getTokenSecret()));
     }
 
     @ApiOperation("自定义注解测试接口")

@@ -1,8 +1,8 @@
 package com.m.demo.service.serviceImpl;
 
 import com.m.demo.dao.TestDao;
+import com.m.demo.entity.WorkerId;
 import com.m.demo.service.TestService;
-import com.m.demo.utils.WorkerIdUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +19,7 @@ public class TestServiceImpl implements TestService {
     @Autowired
     private TestDao testDao;
     @Autowired
-    private WorkerIdUtil workerIdUtil;
+    private WorkerId workerId;
     /*@Autowired
     private Redisson redisson;*/
     @Override
@@ -29,7 +29,7 @@ public class TestServiceImpl implements TestService {
 
     @Override
     public int addProduct(Map map) {
-        long id = workerIdUtil.nextId();
+        long id = workerId.nextId();
         map.put("id",id);
         return testDao.addProduct(map);
     }

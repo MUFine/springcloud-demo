@@ -4,8 +4,8 @@ import com.alibaba.fastjson.JSON;
 import com.m.demo.Entity.Product;
 import com.m.demo.common.ESConstant;
 import com.m.demo.common.Message;
+import com.m.demo.entity.WorkerId;
 import com.m.demo.service.ElasticSearchService;
-import com.m.demo.utils.WorkerIdUtil;
 import org.elasticsearch.action.delete.DeleteRequest;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.action.index.IndexResponse;
@@ -46,7 +46,7 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
     @Autowired
     private RestHighLevelClient restHighLevelClient;
     @Autowired
-    private WorkerIdUtil workerIdUtil;
+    private WorkerId workerId;
     @Override
     public String createIndex(String index) throws IOException {
         CreateIndexRequest createIndexRequest = new CreateIndexRequest(index);
@@ -57,7 +57,7 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
 
     @Override
     public String putData(Product product) throws IOException {
-        String id = String.valueOf(workerIdUtil.nextId());
+        String id = String.valueOf(workerId.nextId());
         product.setId(id);
         IndexRequest indexRequest = new IndexRequest(ESConstant.TEST_INDEX);
         indexRequest.id(id);

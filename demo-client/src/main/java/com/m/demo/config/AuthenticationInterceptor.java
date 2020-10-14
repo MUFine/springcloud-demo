@@ -6,8 +6,8 @@ import com.m.demo.annotation.Login;
 import com.m.demo.annotation.Pass;
 import com.m.demo.common.Code;
 import com.m.demo.common.Message;
-import com.m.demo.common.Secret;
 import com.m.demo.entity.ResultData;
+import com.m.demo.entity.Secret;
 import com.m.demo.jwt.JWTUtil;
 import com.m.demo.utils.MD5Util;
 import org.apache.commons.lang.StringUtils;
@@ -32,8 +32,11 @@ import static com.m.demo.common.HttpResult.result;
 public class AuthenticationInterceptor implements HandlerInterceptor {
     @Autowired
     private StringRedisTemplate redisTemplate;
+    @Autowired
+    private Secret secret;
     @Override
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object handler){
+        System.out.println("secretData = " + secret.getTokenSecret());
         if(!(handler instanceof HandlerMethod)){
             return true;// 如果不是映射到方法直接通过
         }
@@ -54,7 +57,7 @@ public class AuthenticationInterceptor implements HandlerInterceptor {
                     result(httpServletResponse,new ResultData(Code.WITHOUT_TOKEN_CODE, Message.WITHOUT_TOKEN));
                     return false;
                 }
-                if(!JWTUtil.verifyToken(token, MD5Util.getMd5(Secret.TOKEN_SECRET,null))){
+                if(!JWTUtil.verifyToken(token, MD5Util.getMd5(secret.getTokenSecret(),null))){
                     result(httpServletResponse,new ResultData(Code.INVALID_TOKEN_CODE, Message.INVALID_TOKEN));
                     return false;
                 }

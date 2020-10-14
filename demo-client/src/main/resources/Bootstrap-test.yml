@@ -42,6 +42,8 @@ es:
     connectionTimeout: 3000
     socketTimeout: 5000
     connectionRequestTimeout: 500
-id:
+common:
   workerId: 1
   datacenterId: 10
+  tokenSecret: 606f561e-bdb4-47a3-980a-861b623e0c1e
+  gatewaySecret: 8561c669cf203b44adf2db0d553fd167
