@@ -5,7 +5,6 @@ import com.m.demo.annotation.*;
 import com.m.demo.common.Code;
 import com.m.demo.common.Message;
 import com.m.demo.entity.ResultData;
-import com.m.demo.entity.Secret;
 import com.m.demo.entity.WorkerId;
 import com.m.demo.jwt.JWTUtil;
 import com.m.demo.service.ElasticSearchService;
@@ -49,8 +48,8 @@ public class TestController {
     private ElasticSearchService elasticSearchService;
     @Autowired
     private WorkerId workerId;
-    @Autowired
-    private Secret secret;
+    @Value("${common.tokenSecret}")
+    private String tokenSecret;
     @Value("${test}")
     private String data;
 
@@ -106,7 +105,7 @@ public class TestController {
         map.put("userId","1");
         map.put("loginName","loginName");
         map.put("userType","userType");
-        return new ResultData(Code.SUCCESS_CODE, Message.SUCCESS, JWTUtil.getToken(map,secret.getTokenSecret()));
+        return new ResultData(Code.SUCCESS_CODE, Message.SUCCESS, JWTUtil.getToken(map,tokenSecret));
     }
 
     @ApiOperation("自定义注解测试接口")

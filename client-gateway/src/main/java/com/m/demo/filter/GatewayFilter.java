@@ -1,5 +1,6 @@
 package com.m.demo.filter;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.core.Ordered;
@@ -15,12 +16,14 @@ import reactor.core.publisher.Mono;
  */
 @Component
 public class GatewayFilter implements GlobalFilter, Ordered {
-    private final String GATEWAY_SECRET = "8561c669cf203b44adf2db0d553fd167";
+    @Value("${gatewaySecret}")
+    private String gatewaySecret;
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         System.out.println("过滤器开始启用！");
+        System.out.println("gatewaySecret = " + gatewaySecret);
         ServerHttpRequest req = exchange.getRequest().mutate()
-                .header("gateway", GATEWAY_SECRET).build();
+                .header("gateway", gatewaySecret).build();
         return chain.filter(exchange.mutate().request(req.mutate().build()).build());
     }
     @Override

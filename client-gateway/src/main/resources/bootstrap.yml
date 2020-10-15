@@ -3,7 +3,6 @@ spring:
     name: client-gateway
   cloud:
     config:
-      profiles: test
       discovery:
         enabled: true
         service-id: config-server
@@ -13,4 +12,4 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:2020/eureka/
-
+gatewaySecret: 8561c669cf203b44adf2db0d553fd167
