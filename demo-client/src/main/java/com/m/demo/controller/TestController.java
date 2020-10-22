@@ -16,7 +16,6 @@ import com.m.demo.utils.IdUtil;
 import com.m.demo.utils.ImageCodeUtil;
 import io.swagger.annotations.*;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.*;
@@ -38,20 +37,24 @@ import java.util.Map;
 @Slf4j
 @Api(tags = "测试相关接口")
 public class TestController {
-    @Autowired
-    private TestService testService;
-    @Autowired
-    private MQProviderService mqProviderService;
-    @Autowired
-    private WebsoketService WebsoketService;
-    @Autowired
-    private ElasticSearchService elasticSearchService;
-    @Autowired
-    private WorkerId workerId;
+    private final TestService testService;
+    private final MQProviderService mqProviderService;
+    private final WebsoketService WebsoketService;
+    private final ElasticSearchService elasticSearchService;
+    private final WorkerId workerId;
     @Value("${common.tokenSecret}")
     private String tokenSecret;
     @Value("${test}")
     private String data;
+    public TestController(TestService testService, MQProviderService mqProviderService,
+                          WebsoketService WebsoketService, ElasticSearchService elasticSearchService,
+                          WorkerId workerId) {
+        this.testService = testService;
+        this.mqProviderService = mqProviderService;
+        this.WebsoketService = WebsoketService;
+        this.elasticSearchService = elasticSearchService;
+        this.workerId = workerId;
+    }
 
     @ApiOperation("测试配置自动刷新接口")
     @GetMapping("/test")

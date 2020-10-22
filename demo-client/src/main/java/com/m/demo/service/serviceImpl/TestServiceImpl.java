@@ -1,9 +1,8 @@
 package com.m.demo.service.serviceImpl;
 
-import com.m.demo.dao.TestDao;
 import com.m.demo.entity.WorkerId;
+import com.m.demo.mapper.TestMapper;
 import com.m.demo.service.TestService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,22 +15,26 @@ import java.util.Map;
  */
 @Service
 public class TestServiceImpl implements TestService {
-    @Autowired
-    private TestDao testDao;
-    @Autowired
-    private WorkerId workerId;
+    private final TestMapper testMapper;
+    private final WorkerId workerId;
+
+    public TestServiceImpl(TestMapper testMapper, WorkerId workerId) {
+        this.testMapper = testMapper;
+        this.workerId = workerId;
+    }
+
     /*@Autowired
     private Redisson redisson;*/
     @Override
     public List<Map> getData() {
-        return testDao.getData();
+        return testMapper.getData();
     }
 
     @Override
     public int addProduct(Map map) {
         long id = workerId.nextId();
         map.put("id",id);
-        return testDao.addProduct(map);
+        return testMapper.addProduct(map);
     }
 
     @Override

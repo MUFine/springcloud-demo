@@ -61,15 +61,4 @@ public class RabbitConfig {
         return rabbitTemplate;
     }
 
-/*    @Bean
-    public SimpleRabbitListenerContainerFactory rabbitListenerContainerFactory(
-            SimpleRabbitListenerContainerFactoryConfigurer configurer,
-            ConnectionFactory connectionFactory) {
-        SimpleRabbitListenerContainerFactory factory = new SimpleRabbitListenerContainerFactory();
-
-        //Whether to fail if the queues declared by the container are not available on the broker and/or whether to stop the container if one or more queues are deleted at runtime.
-        factory.setMissingQueuesFatal(false);
-        configurer.configure(factory, connectionFactory);
-        return factory;
-    }*/
 }

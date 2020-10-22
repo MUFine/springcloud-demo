@@ -1,5 +1,7 @@
 package com.m.demo.mapper;
 
+import org.apache.ibatis.annotations.Mapper;
+
 import java.util.List;
 import java.util.Map;
 
@@ -9,6 +11,7 @@ import java.util.Map;
  * date:2020/9/28 20:25
  */
 
+@Mapper
 public interface TestMapper {
     List<Map> getData();
     int addProduct(Map map);
