@@ -69,10 +69,17 @@ public class TestController {
     }
 
     @ApiOperation("测试数据接口")
-    @GetMapping("/getData")
+    @GetMapping("/getData/{pageSize}/{pageNum}")
     @Pass
-    public ResultData getData(){
-        return new ResultData(Code.SUCCESS_CODE, Message.SUCCESS,testService.getData());
+    public ResultData getData(@PathVariable("pageNum") int pageNum,@PathVariable("pageSize") int pageSize){
+        return new ResultData(Code.SUCCESS_CODE, Message.SUCCESS,testService.getData(pageNum,pageSize));
+    }
+
+    @ApiOperation("list分页测试（目前未生效）")
+    @GetMapping("/listToPage/{pageSize}/{pageNum}")
+    @Pass
+    public ResultData listToPage(@PathVariable("pageNum") int pageNum,@PathVariable("pageSize") int pageSize){
+        return new ResultData(Code.SUCCESS_CODE, Message.SUCCESS,testService.listToPage(pageNum,pageSize));
     }
 
     @ApiOperation("测试id接口")

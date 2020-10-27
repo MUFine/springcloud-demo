@@ -1,8 +1,8 @@
 package com.m.demo.service;
 
-import com.m.demo.entity.ResultData;
 
-import java.util.List;
+import com.m.demo.entity.ResultPage;
+
 import java.util.Map;
 
 /**
@@ -11,7 +11,8 @@ import java.util.Map;
  * date:2020/9/1 16:52
  */
 public interface TestService {
-    List<Map> getData();
+    ResultPage getData(int pageNum, int pageSize);
+    ResultPage listToPage(int pageNum, int pageSize);
     int addProduct(Map map);
     int buyProduct(long productId);
 }

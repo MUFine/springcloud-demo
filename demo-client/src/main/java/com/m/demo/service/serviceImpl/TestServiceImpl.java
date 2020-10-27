@@ -1,10 +1,14 @@
 package com.m.demo.service.serviceImpl;
 
+import com.m.demo.entity.ResultPage;
 import com.m.demo.entity.WorkerId;
 import com.m.demo.mapper.TestMapper;
 import com.m.demo.service.TestService;
+import com.m.demo.utils.PageUtil;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -26,10 +30,23 @@ public class TestServiceImpl implements TestService {
     /*@Autowired
     private Redisson redisson;*/
     @Override
-    public List<Map> getData() {
-        return testMapper.getData();
+    public ResultPage getData(int pageNum, int pageSize) {
+        return PageUtil.getPageInfo(()->testMapper.getData(),pageNum,pageSize);
     }
-
+    @Override
+    public ResultPage listToPage(int pageNum, int pageSize) {
+        List<Map> list = new ArrayList<>();
+        Map map = new HashMap();
+        map.put("1","1");
+        list.add(map);
+        map.put("2","2");
+        list.add(map);
+        map.put("3","3");
+        list.add(map);
+        map.put("4","4");
+        list.add(map);
+        return PageUtil.listToPage(list,pageNum,pageSize);
+    }
     @Override
     public int addProduct(Map map) {
         long id = workerId.nextId();
