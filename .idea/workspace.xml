@@ -3,16 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="20e904e3-e13a-40bc-8697-25d6b0ce4085" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/AuthenticationInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/AuthenticationInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/utils/PageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/PageUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-client/target/classes/com/m/demo/config/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/target/classes/com/m/demo/config/WebMvcConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-client/target/classes/com/m/demo/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/target/classes/com/m/demo/controller/TestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/jwt/JWTUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/jwt/JWTUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-core/target/classes/com/m/demo/jwt/JWTUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-core/target/classes/com/m/demo/jwt/JWTUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-client/src/main/resources/Bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/src/main/resources/Bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-client/src/main/resources/Bootstrap-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/src/main/resources/Bootstrap-test.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-client/src/main/resources/Bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/src/main/resources/Bootstrap.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/controller/TestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-898">
-              <caret line="65" column="19" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="26" />
+            <state relative-caret-position="337">
+              <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,83 +41,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/ParameterUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo-client/src/main/resources/Bootstrap-test.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/TestServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="33" column="79" selection-start-line="33" selection-start-column="79" selection-end-line="33" selection-end-column="79" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/jwt/JWTUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/entity/ResultPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/WebMvcConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-              <folding>
-                <element signature="e#965#966#0" expanded="true" />
-                <element signature="e#1019#1020#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/AuthenticationInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="78" column="48" lean-forward="true" selection-start-line="78" selection-start-column="48" selection-end-line="78" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/TestService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="57">
+              <caret line="18" column="93" selection-start-line="18" selection-start-column="93" selection-end-line="18" selection-end-column="93" />
             </state>
           </provider>
         </entry>
@@ -172,9 +93,7 @@
         <option value="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/ImageCodeUtil.java" />
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/Entity/Product.java" />
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/ElasticSearchConfig.java" />
-        <option value="$PROJECT_DIR$/demo-client/src/main/resources/Bootstrap-dev.yml" />
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/DemoClientApplication.java" />
-        <option value="$PROJECT_DIR$/demo-client/src/main/resources/Bootstrap.yml" />
         <option value="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/SecretUtil.java" />
         <option value="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/WorkerId.java" />
         <option value="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/entity/WorkerId.java" />
@@ -192,7 +111,6 @@
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/mapper/TestMapper.java" />
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/RabbitConfig.java" />
         <option value="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/entity/ResultPage.java" />
-        <option value="$PROJECT_DIR$/demo-client/src/main/resources/Bootstrap-test.yml" />
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/pageHelperConfig.java" />
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/utils/PageUtil.java" />
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/TestService.java" />
@@ -202,9 +120,12 @@
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/serviceImpl/TestServiceImpl.java" />
         <option value="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/MD5Util.java" />
         <option value="$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/jwt/JWTUtil.java" />
-        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/WebMvcConfig.java" />
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/AuthenticationInterceptor.java" />
         <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/resources/Bootstrap-test.yml" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/resources/Bootstrap-dev.yml" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/resources/Bootstrap.yml" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/WebMvcConfig.java" />
       </list>
     </option>
   </component>
@@ -298,6 +219,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springcloud-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -609,7 +540,7 @@
       <workItem from="1602747584260" duration="2464000" />
       <workItem from="1603351136835" duration="1984000" />
       <workItem from="1603779972612" duration="9488000" />
-      <workItem from="1603868250242" duration="6412000" />
+      <workItem from="1603868250242" duration="7182000" />
     </task>
     <task id="LOCAL-00001" summary="springcloud的demo">
       <created>1599022973883</created>
@@ -730,7 +661,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603789894537</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="登录修改">
+      <created>1603876361884</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1603876361884</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -754,13 +692,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222756000" />
+    <option name="totallyTimeSpent" value="223526000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.35854766" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35854766" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -770,7 +708,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32786885" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.36885247" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.36885247" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -815,7 +753,8 @@
     <MESSAGE value="解决配置类value取不到yml里参数值" />
     <MESSAGE value="项目结构修改" />
     <MESSAGE value="pagehelper分页插件添加" />
-    <option name="LAST_COMMIT_MESSAGE" value="pagehelper分页插件添加" />
+    <MESSAGE value="登录修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="登录修改" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/service/ElasticSearchService.java">
@@ -867,13 +806,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="55" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-client/src/main/resources/Bootstrap-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1040,13 +972,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo-client/src/main/resources/Bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/github/pagehelper/pagehelper/5.1.8/pagehelper-5.1.8.jar!/com/github/pagehelper/page/PageMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
@@ -1102,13 +1027,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo-client/src/main/resources/Bootstrap-test.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/entity/ResultPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -1143,17 +1061,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/WebMvcConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-          <folding>
-            <element signature="e#965#966#0" expanded="true" />
-            <element signature="e#1019#1020#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/AuthenticationInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
@@ -1161,20 +1068,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/ParameterUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/resources/Bootstrap-test.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="35" selection-start-line="35" selection-end-line="35" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/resources/Bootstrap-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/resources/Bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/controller/TestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-898">
-          <caret line="65" column="19" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="26" />
+        <state relative-caret-position="337">
+          <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo-core/src/main/java/com/m/demo/utils/ParameterUtil.java">
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/com/m/demo/config/WebMvcConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        <state relative-caret-position="57">
+          <caret line="18" column="93" selection-start-line="18" selection-start-column="93" selection-end-line="18" selection-end-column="93" />
         </state>
       </provider>
     </entry>

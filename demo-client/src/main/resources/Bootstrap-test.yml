@@ -3,7 +3,7 @@ spring:
     name: demo-client
   cloud:
     config:
-      profiles: client-dev
+      profiles: test
       discovery:
         enabled: true
         service-id: config-server

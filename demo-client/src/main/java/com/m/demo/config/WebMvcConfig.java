@@ -15,9 +15,9 @@ import java.util.List;
 public class WebMvcConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        System.out.println("启用拦截！");
-//        registry.addInterceptor(globalInterceptor()).addPathPatterns("/**");
-        registry.addInterceptor(authenticationInterceptor()).addPathPatterns("/**");
+//        System.out.println("启用拦截！");
+//        registry.addInterceptor(globalInterceptor()).addPathPatterns("/**");//启用gateway网关拦截
+//        registry.addInterceptor(authenticationInterceptor()).addPathPatterns("/**");//登录认证拦截
     }
 
     @Override
