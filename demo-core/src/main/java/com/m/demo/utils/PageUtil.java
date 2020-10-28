@@ -11,7 +11,7 @@ import java.util.function.Supplier;
 
 /**
  * author:M
- * describe:
+ * describe:分页工具类
  * date:2020/9/28 18:00
  */
 public class PageUtil {

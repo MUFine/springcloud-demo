@@ -56,7 +56,7 @@ public class AuthenticationInterceptor implements HandlerInterceptor {
                     result(httpServletResponse,new ResultData(Code.WITHOUT_TOKEN_CODE, Message.WITHOUT_TOKEN));
                     return false;
                 }
-                if(!JWTUtil.verifyToken(token, MD5Util.getMd5(tokenSecret,null))){
+                if(!JWTUtil.verifyToken(token, tokenSecret)){
                     result(httpServletResponse,new ResultData(Code.INVALID_TOKEN_CODE, Message.INVALID_TOKEN));
                     return false;
                 }

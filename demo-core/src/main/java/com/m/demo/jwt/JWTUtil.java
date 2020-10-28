@@ -15,19 +15,21 @@ import java.util.Map;
  * date:2020/9/2 18:37
  */
 public class JWTUtil {
-    public static String getToken(Map<Object,String> map,String tokenSecret) {
-        Date date = new Date();
-        Long time = date.getTime();
+    private static final long VALID_TIME = 24 * 60 * 60 * 1000;//有效时长一天
+    public static String getToken(Map<Object,String> map,String tokenSecret,Date loginTime) {
+        long time = loginTime.getTime();
+        Date expireTime = new Date(VALID_TIME + time);
         String token = JWT.create().withClaim("userId",map.get("userId"))
                 .withClaim("loginName",map.get("loginName"))
                 .withClaim("userType",map.get("userType"))
-                .withClaim("date",time.toString())
-                .sign(Algorithm.HMAC256(MD5Util.getMd5(tokenSecret,null)));
+                .withClaim("date", Long.toString(time))
+                .withExpiresAt(expireTime)
+                .sign(Algorithm.HMAC256(tokenSecret));
         return token;
     }
 
-    public static Boolean verifyToken(String token,String secret){
-        Boolean flag = true;
+    public static boolean verifyToken(String token,String secret){
+        boolean flag = true;
         JWTVerifier jwtVerifier = JWT.require(Algorithm.HMAC256(secret)).build();
         try {
             jwtVerifier.verify(token);

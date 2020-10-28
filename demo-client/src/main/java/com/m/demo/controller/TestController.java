@@ -64,6 +64,7 @@ public class TestController {
 
     @ApiOperation("测试workerId接口")
     @GetMapping("/workerId")
+    @Login
     public long workerId(){
         return workerId.nextId();
     }
@@ -115,7 +116,7 @@ public class TestController {
         map.put("userId","1");
         map.put("loginName","loginName");
         map.put("userType","userType");
-        return new ResultData(Code.SUCCESS_CODE, Message.SUCCESS, JWTUtil.getToken(map,tokenSecret));
+        return new ResultData(Code.SUCCESS_CODE, Message.SUCCESS, JWTUtil.getToken(map,tokenSecret,new Date()));
     }
 
     @ApiOperation("自定义注解测试接口")
