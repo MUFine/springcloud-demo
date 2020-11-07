@@ -12,8 +12,8 @@ import org.springframework.stereotype.Component;
  * date:2020/10/11 15:36
  */
 
-@Data
 @Component
+@Data
 @ConfigurationProperties(prefix = "common")
 public class WorkerIdConfig {
     private int workerId;

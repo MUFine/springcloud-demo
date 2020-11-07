@@ -49,3 +49,11 @@ common:
   datacenterId: 10
   tokenSecret: 606f561e-bdb4-47a3-980a-861b623e0c1e
   gatewaySecret: 8561c669cf203b44adf2db0d553fd167
+wxpay:
+  starid:
+  appid:
+  mchID:
+  key:
+  httpConnectTimeoutMs: 30000
+  httpReadTimeoutMs: 30000
+  certPath: /home/sce/sce_service/key/wx/apiclient_cert.p12

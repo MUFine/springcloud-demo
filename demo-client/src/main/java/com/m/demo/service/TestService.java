@@ -3,6 +3,7 @@ package com.m.demo.service;
 
 import com.m.demo.entity.ResultPage;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
 /**
@@ -15,4 +16,6 @@ public interface TestService {
     ResultPage listToPage(int pageNum, int pageSize);
     int addProduct(Map map);
     int buyProduct(long productId);
+    String wxpay();
+    void wxpayNotify(HttpServletRequest request);
 }

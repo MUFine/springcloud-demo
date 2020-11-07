@@ -168,4 +168,17 @@ public class TestController {
     public void getImageCode(HttpServletRequest request, HttpServletResponse response) {
         ImageCodeUtil.getVerifyCode(request,response);
     }
+
+    @ApiOperation("微信支付接口测试")
+    @PostMapping("/wxpay")
+    public ResultData wxpay() {
+        return new ResultData(Code.SUCCESS_CODE, Message.SUCCESS,testService.wxpay());
+    }
+
+    @ApiOperation("微信支付成功回调接口测试")
+    @PostMapping("/wxpayNotify")
+    public ResultData wxpayNotify(HttpServletRequest request) {
+        testService.wxpayNotify(request);
+        return new ResultData(Code.SUCCESS_CODE, Message.SUCCESS);
+    }
 }
