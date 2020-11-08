@@ -1,5 +1,17 @@
 package com.m.demo.service.serviceImpl;
 
+import com.alipay.api.AlipayClient;
+import com.alipay.api.DefaultAlipayClient;
+import com.alipay.api.domain.AlipayTradePrecreateModel;
+import com.alipay.api.internal.util.AlipaySignature;
+import com.alipay.api.request.AlipayTradePrecreateRequest;
+import com.alipay.api.response.AlipayTradePrecreateResponse;
+import com.google.zxing.BarcodeFormat;
+import com.google.zxing.EncodeHintType;
+import com.google.zxing.client.j2se.MatrixToImageWriter;
+import com.google.zxing.common.BitMatrix;
+import com.google.zxing.qrcode.QRCodeWriter;
+import com.m.demo.config.AliPayConfig;
 import com.m.demo.config.WXPayDataConfig;
 import com.m.demo.entity.ResultPage;
 import com.m.demo.entity.WorkerId;
@@ -11,10 +23,10 @@ import com.m.demo.wxpay.WXPayUtil;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import javax.servlet.http.HttpServletResponse;
+import java.io.OutputStream;
+import java.nio.charset.StandardCharsets;
+import java.util.*;
 
 /**
  * author:M
@@ -26,11 +38,13 @@ public class TestServiceImpl implements TestService {
     private final TestMapper testMapper;
     private final WorkerId workerId;
     private final WXPayDataConfig wxPayDataConfig;
+    private final AliPayConfig aliPayConfig;
 
-    public TestServiceImpl(TestMapper testMapper, WorkerId workerId, WXPayDataConfig wxPayDataConfig) {
+    public TestServiceImpl(TestMapper testMapper, WorkerId workerId, WXPayDataConfig wxPayDataConfig, AliPayConfig aliPayConfig) {
         this.testMapper = testMapper;
         this.workerId = workerId;
         this.wxPayDataConfig = wxPayDataConfig;
+        this.aliPayConfig = aliPayConfig;
     }
 
     /*@Autowired
@@ -89,8 +103,7 @@ public class TestServiceImpl implements TestService {
             Map<String, String> resp = wxpay.unifiedOrder(data);
             String returnCode = resp.get("return_code");
             if("SUCCESS".equals(returnCode)){
-                String codeUrl = resp.get("code_url");
-                return codeUrl;
+                return resp.get("code_url");
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -116,4 +129,73 @@ public class TestServiceImpl implements TestService {
         }
     }
 
+    @Override
+    public void alipay(HttpServletResponse httpResponse) throws Exception {
+        //商户订单号，商户网站订单系统中唯一订单号，必填
+        String outTradeNo = "商户订单号";
+        //付款金额，必填
+        String totalAmount = "付款金额";
+        //订单名称，必填
+        String subject = "订单名称";
+        //商品描述，可空
+        String body = "商品描述";
+        // 该笔订单允许的最晚付款时间，逾期将关闭交易。取值范围：1m～15d。m-分钟，h-小时，d-天，1c-当天（1c-当天的情况下，无论交易何时创建，都在0点关闭）。 该参数数值不接受小数点， 如 1.5h，可转换为 90m。
+        String timeoutExpress = "30m";
+        // (必填) 商户门店编号
+        String storeId = "123";
+        //获得初始化的AlipayClient
+        AlipayClient alipayClient = new DefaultAlipayClient(aliPayConfig.getGatewayUrl(), aliPayConfig.getAppId(), aliPayConfig.getMerchantPrivateKey(), aliPayConfig.getFormat(), aliPayConfig.getCharset(), aliPayConfig.getAlipayPublicKey(), aliPayConfig.getSignType());
+        //设置请求参数
+        AlipayTradePrecreateModel alipayModel = new AlipayTradePrecreateModel();
+        AlipayTradePrecreateRequest alipayRequest = new AlipayTradePrecreateRequest();
+        alipayModel.setOutTradeNo(outTradeNo);
+        alipayModel.setTotalAmount(totalAmount);
+        alipayModel.setSubject(subject);
+        alipayModel.setBody(body);
+        alipayModel.setTimeoutExpress(timeoutExpress);
+        alipayModel.setAlipayStoreId(storeId);
+        alipayRequest.setReturnUrl(aliPayConfig.getReturnUrl());
+        alipayRequest.setNotifyUrl(aliPayConfig.getNotifyUrl());
+        alipayRequest.setBizModel(alipayModel);
+        AlipayTradePrecreateResponse alipayResponse=alipayClient.execute(alipayRequest);
+        String getQrCode=alipayResponse.getQrCode();
+        makeQRCode(getQrCode,httpResponse.getOutputStream(),200,200);
+    }
+
+    @Override
+    public void alipayNotify(HttpServletRequest request) throws Exception{
+        if (signCheck(request.getParameterMap())){
+            //交易状态
+            String trade_status = new String(request.getParameter("trade_status").getBytes("ISO-8859-1"),"UTF-8");
+        }
+    }
+
+    //生成二维码
+    private void makeQRCode(String content, OutputStream outputStream,int width,int height) throws Exception{
+        Map<EncodeHintType,Object> map=new HashMap<>();
+        map.put(EncodeHintType.CHARACTER_SET, StandardCharsets.UTF_8);
+        map.put(EncodeHintType.MARGIN,2);
+        QRCodeWriter qrCodeWriter=new QRCodeWriter();
+        BitMatrix bitMatrix=qrCodeWriter.encode(content, BarcodeFormat.QR_CODE,width,height,map);
+        MatrixToImageWriter.writeToStream(bitMatrix,"jpeg",outputStream);
+    }
+
+    //对notify参数进行验签
+    private boolean signCheck(Map<String,String[]> requestParams) throws Exception{
+        Map<String,String> params = new HashMap<>();
+        for (String name : requestParams.keySet()) {
+            String[] values = requestParams.get(name);
+            String valueStr = "";
+            for (int i = 0; i < values.length; i++) {
+                valueStr = (i == values.length - 1) ? valueStr + values[i]
+                        : valueStr + values[i] + ",";
+            }
+
+            params.put(name, valueStr);
+            System.out.println(name+" ==> "+valueStr);
+        }
+        //调用SDK验证签名
+        return AlipaySignature.rsaCheckV1(params, aliPayConfig.getAlipayPublicKey(),
+                aliPayConfig.getCharset(), aliPayConfig.getSignType());
+    }
 }

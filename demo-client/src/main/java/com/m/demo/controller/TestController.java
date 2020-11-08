@@ -181,4 +181,16 @@ public class TestController {
         testService.wxpayNotify(request);
         return new ResultData(Code.SUCCESS_CODE, Message.SUCCESS);
     }
+
+    @ApiOperation("支付宝支付接口测试")
+    @PostMapping("/alipay")
+    public void alipay(HttpServletResponse httpResponse) throws Exception {
+        testService.alipay(httpResponse);
+    }
+
+    @ApiOperation("支付宝支付成功回调接口测试")
+    @PostMapping("/alipayNotify")
+    public void alipayNotify(HttpServletRequest request) throws Exception {
+        testService.alipayNotify(request);
+    }
 }

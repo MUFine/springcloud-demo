@@ -22,13 +22,12 @@ import java.io.*;
 @ConfigurationProperties(prefix="wxpay")
 public class WXPayDataConfig extends WXPayConfig {
     private byte[] certData;
-    private String starid;
-    private String appid ;  //公众账号ID
-    private String mchID ;  //商户号
+    private String appId ;  //公众账号ID
+    private String mchId ;  //商户号
     private String key ;    //为商户平台设置的密钥key 用作计算请求支付接口的签名 详见微信接口的签名算法要求
     private int httpConnectTimeoutMs ;
     private int httpReadTimeoutMs ;
-    private String certPath ;//安全证书的路径
+    private String certPath ;//商户证书的路径
     public WXPayDataConfig() {
         File file = new File(certPath);
         try {
@@ -42,34 +41,17 @@ public class WXPayDataConfig extends WXPayConfig {
 
     }
 
-    public String getStarId() {
-        return this.starid;
-    }
-
     public String getAppID() {
-        return this.appid;
+        return this.appId;
     }
 
     public String getMchID() {
-        return this.mchID;
+        return this.mchId;
     }
 
-    public String getKey() {
-        return this.key;
-    }
+    public String getKey() { return this.key; }
 
-    public InputStream getCertStream() {
-        ByteArrayInputStream certBis = new ByteArrayInputStream(this.certData);
-        return certBis;
-    }
-
-    public int getHttpConnectTimeoutMs() {
-        return this.httpConnectTimeoutMs;
-    }
-
-    public int getHttpReadTimeoutMs() {
-        return this.httpReadTimeoutMs;
-    }
+    public InputStream getCertStream() { return new ByteArrayInputStream(this.certData); }
 
     @Override
     public IWXPayDomain getWXPayDomain() { // 这个方法需要这样实现, 否则无法正常初始化WXPay

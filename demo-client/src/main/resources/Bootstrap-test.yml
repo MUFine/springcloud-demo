@@ -50,10 +50,28 @@ common:
   tokenSecret: 606f561e-bdb4-47a3-980a-861b623e0c1e
   gatewaySecret: 8561c669cf203b44adf2db0d553fd167
 wxpay:
-  starid:
-  appid:
-  mchID:
+  appId:
+  mchId:
   key:
   httpConnectTimeoutMs: 30000
   httpReadTimeoutMs: 30000
   certPath: /home/sce/sce_service/key/wx/apiclient_cert.p12
+alipay:
+#  商户号
+  appId:
+#  商户私钥
+  merchantPrivateKey:
+#  支付宝公钥
+  alipayPublicKey:
+#  服务器异步通知页面路径
+  notifyUrl:
+#  支付成功之后跳转的地址
+  returnUrl:
+#  签名方式
+  signType: RSA2
+#  字符编码格式
+  charset: utf-8
+  #  格式
+  format: json
+#  支付宝网关
+  gatewayUrl: https://openapi.alipay.com/gateway.do
