@@ -7,6 +7,7 @@ import com.auth0.jwt.exceptions.JWTVerificationException;
 import com.m.demo.utils.MD5Util;
 
 import java.util.Date;
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -17,9 +18,14 @@ import java.util.Map;
 public class JWTUtil {
     private static final long VALID_TIME = 24 * 60 * 60 * 1000;//有效时长一天
     public static String getToken(Map<Object,String> map,String tokenSecret,Date loginTime) {
+        //设置头信息
+        HashMap<String, Object> header = new HashMap<>(2);
+        header.put("typ", "JWT");
+        header.put("alg", "HS256");
         long time = loginTime.getTime();
         Date expireTime = new Date(VALID_TIME + time);
-        String token = JWT.create().withClaim("userId",map.get("userId"))
+        String token = JWT.create().withHeader(header)
+                .withClaim("userId",map.get("userId"))
                 .withClaim("loginName",map.get("loginName"))
                 .withClaim("userType",map.get("userType"))
                 .withClaim("date", Long.toString(time))
