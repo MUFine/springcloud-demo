@@ -76,6 +76,13 @@ public class TestController {
         return new ResultData(Code.SUCCESS_CODE, Message.SUCCESS,testService.getData(pageNum,pageSize));
     }
 
+    @ApiOperation("一对多查询接口")
+    @GetMapping("/getUser/{pageSize}/{pageNum}")
+    @Pass
+    public ResultData getUser(@PathVariable("pageNum") int pageNum,@PathVariable("pageSize") int pageSize){
+        return new ResultData(Code.SUCCESS_CODE, Message.SUCCESS,testService.getUser(pageNum,pageSize));
+    }
+
     @ApiOperation("list分页测试（目前未生效）")
     @GetMapping("/listToPage/{pageSize}/{pageNum}")
     @Pass

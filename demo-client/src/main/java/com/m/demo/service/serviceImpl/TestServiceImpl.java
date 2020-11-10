@@ -11,6 +11,7 @@ import com.google.zxing.EncodeHintType;
 import com.google.zxing.client.j2se.MatrixToImageWriter;
 import com.google.zxing.common.BitMatrix;
 import com.google.zxing.qrcode.QRCodeWriter;
+import com.m.demo.Entity.User;
 import com.m.demo.config.AliPayConfig;
 import com.m.demo.config.WXPayDataConfig;
 import com.m.demo.entity.ResultPage;
@@ -52,6 +53,11 @@ public class TestServiceImpl implements TestService {
     @Override
     public ResultPage getData(int pageNum, int pageSize) {
         return PageUtil.getPageInfo(()->testMapper.getData(),pageNum,pageSize);
+    }
+
+    @Override
+    public ResultPage getUser(int pageNum, int pageSize) {
+        return PageUtil.getPageInfo(()->testMapper.getUser(),pageNum,pageSize);
     }
     @Override
     public ResultPage listToPage(int pageNum, int pageSize) {

@@ -56,8 +56,9 @@ public class WXPayDataConfig extends WXPayConfig {
 
     public InputStream getCertStream() { return new ByteArrayInputStream(this.certData); }
 
+    // 这个方法需要这样实现, 否则无法正常初始化WXPay
     @Override
-    public IWXPayDomain getWXPayDomain() { // 这个方法需要这样实现, 否则无法正常初始化WXPay
+    public IWXPayDomain getWXPayDomain() {
         IWXPayDomain iwxPayDomain = new IWXPayDomain() {
             @Override
             public void report(String domain, long elapsedTimeMillis, Exception ex) {

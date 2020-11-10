@@ -65,4 +65,19 @@
             </if>
         </trim>
     </insert>
+
+    <select id="getUser" resultMap="userData">
+        SELECT id,name,age,sex FROM user
+    </select>
+    <resultMap id="userData" type="com.m.demo.Entity.User">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="age" property="age"/>
+        <result column="sex" property="sex"/>
+        <collection property="userTypes" select="getUserType" column="id"/>
+    </resultMap>
+
+    <select id="getUserType" resultType="String">
+        SELECT ut.userType FROM user u LEFT JOIN user_type ut ON u.id = ut.userId WHERE u.id = #{id}
+    </select>
 </mapper>

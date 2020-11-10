@@ -2,10 +2,12 @@ package com.m.demo.service;
 
 
 import com.alipay.api.AlipayApiException;
+import com.m.demo.Entity.User;
 import com.m.demo.entity.ResultPage;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -15,6 +17,7 @@ import java.util.Map;
  */
 public interface TestService {
     ResultPage getData(int pageNum, int pageSize);
+    ResultPage getUser(int pageNum, int pageSize);
     ResultPage listToPage(int pageNum, int pageSize);
     int addProduct(Map map);
     int buyProduct(long productId);
